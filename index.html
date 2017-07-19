@@ -1,0 +1,253 @@
+<!-- Should we have an about section where we can put some video or something? What is Kabir doing? -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>ShriTeq</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen, projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet">
+    </head>
+    <body>
+        <style type="text/css">
+        @media only screen and (min-width: 601px)
+        .container {
+            width: 85%;
+        }
+
+        .background {
+            background-image: url('bg.jpg');
+            background-size: cover;
+        }
+
+        </style>
+        <div class="navbar-fixed">
+            <nav class="white" role="navigation" id="top">
+                <div class="nav-wrapper">
+                    <a href="" class="brand-logo left hide-on-med-and-down" style="padding-top: 3px; padding-left: 1vw;"><img src="shriteq.png" style="height: 6vh;"></a>
+                    <a href="" class="brand-logo center hide-on-large-only" style="padding-top: 7px;"><img src="shriteq.png" style="height: 6vh;"></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#scrollspeakers" class=".navbar-links">Speakers</a></li>
+                        <li><a href="#schedule" class=".navbar-links">Schedule</a></li>
+                        <li><a href="#events" class=".navbar-links">Events</a></li>
+                        <li><a href="#findmepls" class=".navbar-links">Contact</a></li>
+                    </ul>
+                    <ul id="slide-out" class="side-nav">
+                        <li><a href="#speakers" class="  .navbar-links">Speakers</a></li>
+                        <li><a href="#schedule" class="  .navbar-links">Schedule</a></li>
+                        <li><a href="#events" class="  .navbar-links">Events</a></li>
+                        <li><a href="#findmepls" class="  .navbar-links">Contact</a></li>
+                    </ul>
+                    <a href="#" data-activates="slide-out" class="button-collapse left left-aligned"><i class="material-icons">menu</i></a>
+                </div>
+            </nav>
+        </div>
+        <div class="background">
+            <div class="section white-text" style="height: 90vh;">
+                <div style="text-align: center;">
+                    <h1 style="font-family: Lato; line-height: 0.6em;">Welcome</h1>
+                </div>
+                <div style="text-align: center;">
+                    <h2 style="font-family: Lato; line-height: 0.1em; padding-top: 1.4%;">to</h2>
+                    <h2 style="font-family: Lato;"><span class="yellow-text text-darken-1">Shri</span><span class="red-text text-darken-4">Teq</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section" id="events">
+                <div class="row">
+                    <h1 style="text-align: center;" class=" ">Events</h1>
+                    <div class="center">
+                        <ul class="collapsible popout" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header">Web Design <i class="medium material-icons">web</i></div>
+                                <div class="collapsible-body">Make pretty websites. Simple as that.</div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Tech Debate <i class="medium material-icons">forum</i></div>
+                                <div class="collapsible-body">Show your persuasive and analytical skills off and maybe even win a trophy. Not if we're participating though ;)</div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Gaming <i class="medium material-icons">games</i></div>
+                                <div class="collapsible-body">You know what to do.</div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Film Making <i class="medium material-icons">movie</i></div>
+                                <div class="collapsible-body">Make nice movies.</div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">Hackathon <i class="medium material-icons">code</i></div>
+                                <div class="collapsible-body">Code all night and lose neurons with us at ShriTeq!</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">
+                        <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax"><img src="background2.jpg" alt="background img 2"></div>
+        </div>
+        <div class="black red-text text-darken-4">
+            <!-- Speakers' Section -->
+            <div class="scrollme" id="scrollspeakers"></div>
+            <div class="section" id="speakers" >
+
+                <h1 style="text-align: center;"><u>Speakers</u></h1>
+                <div class="row">
+                    <div class="col s12 m4 l4 hoverable speaker-box" style="padding: 20px 20px 20px 20px;">
+                        <div class="speaker-img">
+                            <img src="penny.PNG" class="circle responsive-img">
+                            <h4 style="text-align: center; text-decoration: underline black;"><u>Pennywise</u></h4>
+                        </div>
+                        <ul class="collapsible" data-collapsible="accordion">
+                            <!--TODO: Put actual speaker information in when we know who all will be there-->
+                            <li>
+                                <div class="collapsible-header">About <i class="medium material-icons">info_outline</i></div>
+                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s12 m4 l4 hoverable speaker-box" style="padding: 20px 20px 20px 20px;">
+                        <div class="speaker-img">
+                            <img src="penny.PNG" class="circle responsive-img">
+                            <h4 style="text-align: center; text-decoration: underline black;">Pennywise</h4>
+                        </div>
+                        <ul class="collapsible" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header">About <i class="medium material-icons">info_outline</i></div>
+                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s12 m4 l4 hoverable speaker-box" style="padding: 20px 20px 20px 20px;">
+                        <div class="speaker-img">
+                            <img src="penny.PNG" class="circle responsive-img">
+                            <h4 style="text-align: center; text-decoration: underline black;">Pennywise</h4>
+                        </div>
+                        <ul class="collapsible" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header">About <i class="medium material-icons">info_outline</i></div>
+                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">
+                        <h5 class="header col s12 light">Satanic random text</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+        </div>
+        <div class="container">
+            <!-- Schedule Section -->
+            <div class="section">
+                <div class="row">
+                    <div class="col s12 center" id="schedule">
+                        <h3><i class="mdi-content-send brown-text"></i></h3>
+                        <h1 style="text-align: center;" class=" ">Schedule</h4>
+                        <p class="flow-text">Jam packed with the most creative activities we could come up with :)</p>
+                        <a href="schedule.pdf" class="btn red darken-4 waves-effect waves-dark">Schedule for Day 1</a>
+                        <a href="schedule.pdf" class="btn red darken-4 waves-effect waves-dark">Schedule for Day 2</a>
+                        <!--TODO: Make links to actual pdf-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">
+                        <h5 class="header col s12 light">Lorem lipsum</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 3"></div>
+        </div>
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <h1 style="text-align: center;" class=" ">Contact</h1>
+                    <div class="center" id="findmepls">
+                        Iframe with google maps goes here along with link for email.
+                        <!--TODO: Add Google Maps functionality-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer red darken-4">
+            <div class="container">
+                <!-- I don't know what to put here -->
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Creators' Bio</h5>
+                        <p class="grey-text text-lighten-4">We are a team of school students working on this project like it's our full time job.</p>
+                    </div>
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Connect</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Fake Link 1</a></li>
+                            <li><a class="white-text" href="#!">Fake Link 2</a></li>
+                            <li><a class="white-text" href="#!">Fake Link 3</a></li>
+                            <li><a class="white-text" href="#!">Fake Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    Made by Adit Kirtani &amp; Rahul Mookerji.
+                </div>
+            </div>
+        </footer>
+        <!--  Scripts-->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/scrollreveal.js"></script>
+        <script>
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        </script>
+
+        <script>
+            window.sr = ScrollReveal();
+            sr.reveal('.background');
+
+            sr.reveal('.speaker-box', {
+                distance: '10em',
+                duration: 1000,
+                origin: 'left',
+                reset: true
+            });
+        </script>
+
+        <script>
+            var menu_id = $("#"+ $('.button-collapse').attr('data-activates'));
+            menu_id.css('width', '240px');
+            menu_id.css('right', '');
+            menu_id.css('left', '');
+        </script>
+    </body>
+</html>
