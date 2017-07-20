@@ -60,3 +60,11 @@ footer.page-footer {
   width: 150px;
   height: 150px;
 }
+
+.bgTrans {
+  opacity: 0.5;
+}
+
+.logo {
+  z-index: 1000;
+}
