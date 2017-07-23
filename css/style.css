@@ -69,20 +69,11 @@ footer.page-footer {
 }
 
 .nb {
-    background-color: rgba(255, 255, 255, 0.7);
-    -webkit-transition: all 0.6s ease-out;
-    -moz-transition: all 0.6s ease-out;
-    -o-transition: all 0.6s ease-out;
-    -ms-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out;
+    background-color: rgb(255,145,0);
 }
 
 .logo {
     z-index: 1000;
-}
-
-.nb.scrolled {
-    background-color: rgba(255, 255, 255, 0.9);
 }
 
 #speaker-img {
@@ -111,4 +102,20 @@ footer.page-footer {
 
 #title:hover {
     border-bottom: 2px solid white;
+}
+
+.school-name:hover {
+  border-bottom: 1px white solid;
+}
+
+.navbar-links {
+    font-size: 5em;
+}
+
+.pin-top {
+    position: relative;
+}
+
+.pinned {
+    position: fixed !important;
 }

@@ -12,7 +12,22 @@
     </head>
     <body>
         
-        <div class="navbar-fixed">
+    	
+
+        <div style="height: 100vh" class="black">
+  			<div class="type-wrap container" style="text-align: center; padding-top: 15%;">
+    			<div id="typed-strings">
+     				<p>
+     					Welcome to <span class="red-text">ShriTeq^300 </span>
+     					<br>
+     					by <span class="school-name"><span class="teal-text">The Shri Ram School</span>, <span class="teal-text">Moulsari</span></span>
+     				</p>
+    			</div>
+    			<span id="typed" style="color: white; font-size: 10vh;"></span>
+  			</div>
+		</div>
+
+		<div class="navbar">
             <nav class="nb" role="navigation" id="top">
                 <div class="nav-wrapper">
                     <a href="" class="brand-logo left hide-on-med-and-down" style="padding-top: 3px; padding-left: 1vw;"><img src="res/shriteq.png" class="logo" style="height: 6vh;"></a>
@@ -33,14 +48,17 @@
                 </div>
             </nav>
         </div>
+
+        
+
         <div class="background">
             <div class="section">
                 <div style="text-align: center;">
-                    <h1 style="font-family: Lato; line-height: 0.6em;">Welcome</h1>
+                    <h1 style="line-height: 0.6em;">Welcome</h1>
                 </div>
                 <div style="text-align: center;">
-                    <h2 style="font-family: Lato; line-height: 0.1em; padding-top: 1.4%;">to</h2>
-                    <h2 style="font-family: Lato;"><span class="red-text text-darken-4" id="title">ShriTeq</span></h2>
+                    <h2 style="line-height: 0.1em; padding-top: 1.4%;">to</h2>
+                    <h2><span class="red-text text-darken-4" id="title">ShriTeq</span></h2>
                 </div>
             </div>
         </div>
@@ -106,7 +124,7 @@
                         <ul class="collapsible" data-collapsible="accordion">
                             <li>
                                 <div class="collapsible-header">About <i class="medium material-icons">info_outline</i></div>
-                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
+                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
                             </li>
                         </ul>
                     </div>
@@ -120,11 +138,85 @@
                 <div class="row">
                     <div class="col s12 center" id="schedule">
                         <h3><i class="mdi-content-send brown-text"></i></h3>
-                        <h1 style="text-align: center;" class=" ">Schedule</h4>
+                        <h1 style="text-align: center;" class="">Schedule</h4>
                         <p class="flow-text">Jam packed with the most creative activities we could come up with :)</p>
-                        <a href="schedule.pdf" class="btn red darken-4 waves-effect waves-dark">Schedule for Day 1</a>
-                        <a href="schedule.pdf" class="btn red darken-4 waves-effect waves-dark">Schedule for Day 2</a>
-                        <!--TODO: Make links to actual pdf-->
+
+                        <button data-target="modal1" class="btn modal-trigger" id="modal-button">Day 1 Schedule</button>
+                        <br>
+                        <br>
+                        <button data-target="modal2" class="btn modal-trigger" id="modal-button2">Day 2 Schedule</button>
+
+                        <div id="modal1" class="modal">
+						    <div class="modal-content">
+						    	<h3>Day 1</h3>
+
+						        <table class="striped centered">
+		                            <thead>
+		                                <tr>
+		                                    <th>Thing 1</th>
+		                                    <th>Thing 2</th>
+		                                    <th>Thing 3</th>
+		                                </tr>
+		                            </thead>
+		                            <tbody>
+		                                <tr>
+		                                    <td>Event a</td>
+		                                    <td>Lovely</td>
+		                                    <td>Hopeless</td>
+		                                </tr>
+		                                <tr>
+		                                    <td>Event b</td>
+		                                    <td>So cool</td>
+		                                    <td>&lt;3</td>
+		                                </tr>
+		                                <tr>
+		                                    <td>Event c</td>
+		                                    <td>Seems boring</td>
+		                                    <td>idk</td>
+		                                </tr>
+		                            </tbody>
+                            	</table>
+						    </div>
+						    <div class="modal-footer">
+						        <a class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+						    </div>
+						</div>
+
+						<div id="modal2" class="modal">
+						    <div class="modal-content">
+						    <h3>Day 2</h3>
+
+						        <table class="striped centered">
+		                            <thead>
+		                                <tr>
+		                                    <th>Thing 1</th>
+		                                    <th>Thing 2</th>
+		                                    <th>Thing 3</th>
+		                                </tr>
+		                            </thead>
+		                            <tbody>
+		                                <tr>
+		                                    <td>Event a</td>
+		                                    <td>Lovely</td>
+		                                    <td>Hopeless</td>
+		                                </tr>
+		                                <tr>
+		                                    <td>Event b</td>
+		                                    <td>So cool</td>
+		                                    <td>&lt;3</td>
+		                                </tr>
+		                                <tr>
+		                                    <td>Event c</td>
+		                                    <td>Seems boring</td>
+		                                    <td>idk</td>
+		                                </tr>
+		                            </tbody>
+                            	</table>
+						    </div>
+						    <div class="modal-footer">
+						        <a class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+						    </div>
+						</div>
                     </div>
                 </div>
             </div>
@@ -149,7 +241,7 @@
                         <br>
                         <br>
 
-                        Click <a href="#" id="sign-up"><strong>here</strong></a> to register!
+                        Click <a href="#modal1" id="sign-up"><strong>here</strong></a> to register!
                     </div>
                 </div>
             </div>
@@ -184,6 +276,9 @@
         <script src="js/materialize.js"></script>
         <script src="js/init.js"></script>
         <script src="js/scrollreveal.js"></script>
+        <script src="js/sticky.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="js/script.js"></script>
         <script>
             $("a").on('click', function(event) {
                 if (this.hash !== "") {
@@ -202,8 +297,7 @@
             sr.reveal('.speaker-box', {
                 distance: '10em',
                 duration: 1000,
-                origin: 'left',
-                reset: true
+                origin: 'left'
             });
         </script>
 
@@ -230,6 +324,26 @@
             menu_id.css('width', '240px');
             menu_id.css('right', '');
             menu_id.css('left', '');
+        </script>
+
+        <script>
+        	$('#modal-button').click(function() {
+        		$('#modal1').modal();
+        	});
+        	$('#modal-button2').click(function() {
+        		$('#modal2').modal();
+        	});
+        </script>
+
+        <script>
+        	var typed = new Typed("#typed", {
+    			stringsElement: '#typed-strings',
+    			typeSpeed: 80,
+    			backSpeed: 20,
+    			startDelay: 1000,
+    			loop: false,
+    			smartBackspace: false
+  			});
         </script>
     </body>
 </html>
