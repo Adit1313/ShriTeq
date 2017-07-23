@@ -1,20 +1,18 @@
+.preloader-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;  
+}
+
 * {
     font-family: "Open Sans";
-}
-
-.video-container-x {
-    overflow: hidden;
-    position: absolute;
-    top: 64px;
-    width: 100vw;
-    height: calc(100vh - 64px);
-    object-fit: cover;
-    /* TODO: Fix when height less than aspect ratio */
-}
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
 }
 
 p {
@@ -22,15 +20,7 @@ p {
 }
 
 .button-collapse {
-  color: #26a69a;
-}
-
-.icon-block {
-    padding: 0 15px;
-}
-
-.icon-block .material-icons {
-    font-size: inherit;
+  color: #FFFFFF;
 }
 
 footer.page-footer {
@@ -80,7 +70,7 @@ footer.page-footer {
 }
 
 .navbar-links {
-    font-size: 5em;
+    font-size: 50em !important;
 }
 
 .pin-top {
@@ -92,5 +82,5 @@ footer.page-footer {
 }
 
 .speaker-box {
-    z-index: -20000000000;
+    z-index: 666666 !important;
 }

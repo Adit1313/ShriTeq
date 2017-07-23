@@ -11,19 +11,38 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
     <body>
-        
-    	
+    	<div class="preloader-background">
+			<div class="preloader-wrapper big active">
+				<div class="spinner-layer spinner-blue">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="gap-patch">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <div style="height: 100vh" class="black">
-  			<div class="type-wrap container" style="text-align: center; padding-top: 15%;">
-    			<div id="typed-strings">
-     				<p>
-     					Welcome to <span class="red-text">ShriTeq^300 </span>
-     					<br>
-     					by <span class="school-name"><span class="teal-text">The Shri Ram School</span>, <span class="teal-text">Moulsari</span></span>
+
+		<div style="height: 101vh" class="black">
+			<div class="type-wrap container" style="text-align: center;">
+				<div id="typed-strings">
+    				<p>
+    					Welcome to <span class="red-text">ShriTeq^300 </span>
+    					<br>
+     					by <span class="school-name"><a href="http://www.tsrs.org" class="teal-text" style="text-decoration: none;" target="_blank">The Shri Ram School</a>, <a href="http://www.tsrs.org" target="_blank" style="text-decoration: none;" class="teal-text">Moulsari</a></span>
      				</p>
     			</div>
-    			<span id="typed" style="color: white; font-size: 10vh;"></span>
+    			<span class="typey-text" id="typed" style="color: white; font-size: 10vh;"></span>
+
+    			
+  			</div>
+  			<div style="position: absolute; bottom: 0; padding-left: 45%; padding-bottom: 7%" class="bounce hide-on-med-and-down">
+  				<a href="#top" class="btn-large waves-effect waves-light black"><i class="material-icons" style="font-size: 4rem">arrow_drop_down</i></a>
   			</div>
 		</div>
 
@@ -32,11 +51,11 @@
                 <div class="nav-wrapper">
                     <a href="" class="brand-logo left hide-on-med-and-down" style="padding-top: 3px; padding-left: 1vw;"><img src="res/shriteq.png" class="logo" style="height: 6vh;"></a>
                     <a href="" class="brand-logo center hide-on-large-only logo" style="padding-top: 7px;"><img src="res/shriteq.png" style="height: 6vh;"></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#scrollspeakers" class=".navbar-links">Speakers</a></li>
-                        <li><a href="#schedule" class=".navbar-links">Schedule</a></li>
-                        <li><a href="#events" class=".navbar-links">Events</a></li>
-                        <li><a href="#findmepls" class=".navbar-links">Contact</a></li>
+					<ul class="right hide-on-med-and-down" style="font-size: 3em;">
+                        <li><a href="#scrollspeakers" class=".navbar-links" style="font-size: 45% !important; color: white !important">Speakers</a></li>
+                        <li><a href="#schedule" class=".navbar-links" style="font-size: 45% !important; color: white !important">Schedule</a></li>
+                        <li><a href="#events" class=".navbar-links" style="font-size: 45% !important; color: white !important">Events</a></li>
+                        <li><a href="#findmepls" class=".navbar-links" style="font-size: 45% !important; color: white !important">Contact</a></li>
                     </ul>
                     <ul id="slide-out" class="side-nav">
                         <li><a href="#speakers" class=".navbar-links">Speakers</a></li>
@@ -51,21 +70,10 @@
 
         
 
-        <div class="background">
-            <div class="section">
-                <div style="text-align: center;">
-                    <h1 style="line-height: 0.6em;">Welcome</h1>
-                </div>
-                <div style="text-align: center;">
-                    <h2 style="line-height: 0.1em; padding-top: 1.4%;">to</h2>
-                    <h2><span class="red-text text-darken-4" id="title">ShriTeq</span></h2>
-                </div>
-            </div>
-        </div>
         <div class="container">
             <div class="section" id="events">
                 <div class="row">
-                    <h1 style="text-align: center;" class=" ">Events</h1>
+                    <h1 style="text-align: center;">Events</h1>
                     <div class="center">
                         <ul class="collapsible popout" data-collapsible="accordion">
                             <li>
@@ -101,7 +109,7 @@
 
                 <h1 style="text-align: center;">Speakers</h1>
                 <div class="row">
-                    <div class="col s12 m6 l6 hoverable speaker-box" style="padding: 20px 20px 20px 20px;">
+                    <div class="col s12 m6 l6 hoverable" style="padding: 20px 20px 20px 20px;">
                         <div class="speaker-img">
                             <img src="res/penny.PNG" class="circle responsive-img hide-on-large-only">
                             <img src="res/penny.PNG" class="circle responsive-img hide-on-med-and-down" style="margin-left: 2.5%;">
@@ -115,7 +123,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col s12 m6 l6 hoverable speaker-box" style="padding: 20px 20px 20px 20px;">
+                    <div class="col s12 m6 l6 hoverable" style="padding: 20px 20px 20px 20px;">
                         <div class="speaker-img">
                             <img src="res/penny.PNG" class="circle responsive-img hide-on-large-only">
                             <img src="res/penny.PNG" class="circle hide-on-med-and-down" style="margin: auto;">
