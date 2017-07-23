@@ -23,10 +23,6 @@ p {
   color: #FFFFFF;
 }
 
-footer.page-footer {
-    margin: 0;
-}
-
 .round {
     width: 150px;
     height: 150px;
@@ -56,11 +52,6 @@ footer.page-footer {
     color: white !important;
 }
 
-#footer-link:hover {
-    background: white;
-    color: #B71C1C !important;
-}
-
 #title:hover {
     border-bottom: 2px solid white;
 }
@@ -83,4 +74,21 @@ footer.page-footer {
 
 .speaker-box {
     z-index: 666666 !important;
+}
+
+.typey-text {
+padding-top: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+	.typey-text {
+		font-size: 2em;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	.typey-text {
+		font-size: 5em;
+	}
 }
