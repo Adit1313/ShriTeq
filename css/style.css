@@ -23,27 +23,9 @@ p {
   color: #FFFFFF;
 }
 
-.round {
-    width: 150px;
-    height: 150px;
-}
-
 .nb {
     background-color: #FFD600;
     position: absolute;
-}
-
-#speaker-img {
-    position: relative;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-#title:hover {
-    border-bottom: 2px solid white;
 }
 
 .school-name:hover {
@@ -54,6 +36,23 @@ p {
     font-size: 50em !important;
 }
 
-.vid-intro {
+#speaker-img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+video {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bg {
+    background-image: url(http://www.shriteq.org/2016/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
     height: 100vh;
 }
