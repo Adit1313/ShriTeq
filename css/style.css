@@ -12,7 +12,7 @@
 }
 
 * {
-    font-family: "Open Sans";
+    font-family: "Segoe UI Light";
 }
 
 p {
@@ -24,16 +24,16 @@ p {
 }
 
 .nb {
-    background-color: #FFD600;
-    position: absolute;
+	
 }
 
-.school-name:hover {
-  border-bottom: 1px white solid;
+#red-bg {
+	color: rgb(183, 28, 28);
 }
 
-.navbar-links {
-    font-size: 50em !important;
+#red-bg:hover {
+	color: white;
+	background-color: rgb(183, 28, 28);
 }
 
 #speaker-img {
@@ -42,17 +42,27 @@ p {
 	display: block;
 }
 
-video {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+.text-cen {
+    text-align: center;
 }
 
-.bg {
-    background-image: url(http://www.shriteq.org/2016/bg1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
+form {
+    z-index: -100000;
+}
+
+#map {
+    padding: 1%;
+    padding-bottom: 2%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#contact-card {
+    padding-bottom: 2%;
+}
+
+#card-button {
+    margin-top: 4%;
 }
