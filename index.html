@@ -29,21 +29,30 @@
 				</div>
 			</div>
 		</div>
-
+		<!--
 		<div style="height: 100vh;" class="fullscreen-bg">
 			<video muted loop autoplay class="fullscreen-bg__video" src="res/sunrise.mp4">
 			</video>
+		</div>
+		-->
+
+		<div class="video-bg">
+			<div class="video-holder">
+				<video class="fillWidth" autplay loop muted src="res/sunrise.mp4">
+					
+				</video>
+			</div>
 		</div>
 
 		<div class="navbar">
 			<nav class="white nb" role="navigation" id="top">
 				<div class="nav-wrapper">
-					<a href="" class="brand-logo left hide-on-med-and-down" style="padding-top: 6px; padding-left: 1vw;"><img src="res/shriteq.png" class="logo" style="height: 6vh;"></a>
-					<a href="" class="brand-logo center hide-on-large-only logo" style="padding-top: 7px;"><img src="res/shriteq.png" style="height: 45px;"></a>
+					<a class="brand-logo left hide-on-med-and-down" style="padding-top: 6px; padding-left: 1vw;"><img src="res/shriteq.png" class="logo" style="height: 6vh;"></a>
+					<a class="brand-logo center hide-on-large-only logo" style="padding-top: 7px;"><img src="res/shriteq.png" style="height: 45px;"></a>
 					<ul class="right hide-on-med-and-down" style="font-size: 3em;">
 						<li><a href="#about" id="red-bg">About</a></li>
-						<li><a href="#speakers" id="red-bg">Speakers</a></li>
 						<li><a href="#events" id="red-bg">Events</a></li>
+						<li><a href="#speakers" id="red-bg">Speakers</a></li>
 						<li><a href="#schedule" id="red-bg">Schedule</a></li>
 						<li><a href="#join" id="red-bg">Register</a></li>
 					</ul>
@@ -53,8 +62,8 @@
 		</div>
 		<ul id="slide-out" class="side-nav">
 			<li><a href="#about" class=".navbar-links">About</a></li>
-			<li><a href="#speakers" class=".navbar-links">Speakers</a></li>
 			<li><a href="#events" class=".navbar-links">Events</a></li>
+			<li><a href="#speakers" class=".navbar-links">Speakers</a></li>
 			<li><a href="#schedule" class=".navbar-links">Schedule</a></li>
 			<li><a href="#join" class=".navbar-links">Register</a></li>
 		</ul>
@@ -151,78 +160,10 @@
 						<h3><i class="mdi-content-send brown-text"></i></h3>
 						<h1>Schedule</h4>
 						<p class="flow-text">Jam packed with the most creative activities we could come up with :)</p>
-						<button data-target="modal1" class="btn modal-trigger" id="modal-button">Day 1 Schedule</button>
+						<button data-target="day1-schedule" class="btn modal-trigger" id="schedule-button1">Day 1 Schedule</button>
 						<br>
 						<br>
-						<button data-target="modal2" class="btn modal-trigger" id="modal-button2">Day 2 Schedule</button>
-						<div id="modal1" class="modal">
-							<div class="modal-content">
-								<h3>Day 1</h3>
-								<table class="striped centered">
-									<thead>
-										<tr>
-											<th>Thing 1</th>
-											<th>Thing 2</th>
-											<th>Thing 3</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Event a</td>
-											<td>Lovely</td>
-											<td>Hopeless</td>
-										</tr>
-										<tr>
-											<td>Event b</td>
-											<td>So cool</td>
-											<td>&lt;3</td>
-										</tr>
-										<tr>
-											<td>Event c</td>
-											<td>Seems boring</td>
-											<td>idk</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="modal-footer">
-								<a class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
-							</div>
-						</div>
-						<div id="modal2" class="modal">
-							<div class="modal-content">
-								<h3>Day 2</h3>
-								<table class="striped centered">
-									<thead>
-										<tr>
-											<th>Thing 1</th>
-											<th>Thing 2</th>
-											<th>Thing 3</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Event a</td>
-											<td>Lovely</td>
-											<td>Hopeless</td>
-										</tr>
-										<tr>
-											<td>Event b</td>
-											<td>So cool</td>
-											<td>&lt;3</td>
-										</tr>
-										<tr>
-											<td>Event c</td>
-											<td>Seems boring</td>
-											<td>idk</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="modal-footer">
-								<a class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
-							</div>
-						</div>
+						<button data-target="day2-schedule" class="btn modal-trigger" id="schedule-button2">Day 2 Schedule</button>
 					</div>
 				</div>
 			</div>
@@ -248,17 +189,17 @@
 							</div>
 						</div>
 
-						<div class="row">
+						<div class="row" style="padding-top: 3%;">
 							<div class="col s12 m4 l4 hoverable" id="contact-card">
 								<div>
-									<h4>Register</h4>
+									<h4 class="text-cen">Register</h4>
 									<hr>
 								</div>
-								<div>
+								<div class="text-cen">
 									Received an invite? Then proceed to register here:
 								</div>
 								<div class="center">
-									<a class="btn red darken-3 waves-effect" id="card-button">REGISTER</a>
+									<a class="btn red darken-3 waves-effect modal-trigger card-button" id="register-button" data-target="register-modal">REGISTER</a>
 								</div>
 							</div>
 
@@ -271,19 +212,162 @@
 									Want to participate? Then sign up for an invite right here right now:
 								</div>
 								<div class="center">
-									<a class="btn red darken-3 waves-effect" id="card-button">SIGN UP</a>
+									<a class="btn red darken-3 waves-effect modal-trigger card-button" id="signup-button" data-target="signup-modal">SIGN UP</a>
+								</div>
+							</div>
+
+							<div class="col s12 m4 l4 hoverable" id="contact-card">
+								<div>
+									<h4 class="text-cen">Contact</h4>
+									<hr>
+								</div>
+								<div class="text-cen">
+									Any problem? Want to drop in a message? Please do so below:
+								</div>
+								<div class="center">
+									<a class="btn red darken-3 waves-effect modal-trigger card-button" id="contact-button" data-target="contact-modal">CONTACT</a>
 								</div>
 							</div>
 						</div>
-						
 						<br>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<!--MODAL SECTION-->
+		<div>
+			<div id="day1-schedule" class="modal">
+				<div class="modal-content">
+					<h3>Day 1</h3>
+					<table class="striped centered">
+						<thead>
+							<tr>
+								<th>Thing 1</th>
+								<th>Thing 2</th>
+								<th>Thing 3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Event a</td>
+								<td>Lovely</td>
+								<td>Hopeless</td>
+							</tr>
+							<tr>
+								<td>Event b</td>
+								<td>So cool</td>
+								<td>&lt;3</td>
+							</tr>
+							<tr>
+								<td>Event c</td>
+								<td>Seems boring</td>
+								<td>idk</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<a class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+				</div>
+			</div>
+
+			<div id="day2-schedule" class="modal">
+				<div class="modal-content">
+					<h3>Day 2</h3>
+					<table class="striped centered">
+						<thead>
+							<tr>
+								<th>Thing 1</th>
+								<th>Thing 2</th>
+								<th>Thing 3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Event a</td>
+								<td>Lovely</td>
+								<td>Hopeless</td>
+							</tr>
+							<tr>
+								<td>Event b</td>
+								<td>So cool</td>
+								<td>&lt;3</td>
+							</tr>
+							<tr>
+								<td>Event c</td>
+								<td>Seems boring</td>
+								<td>idk</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<a class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+				</div>
+			</div>
+
+			<div class="modal" id="register-modal">
+								
+			</div>
+
+			<div class="modal" id="signup-modal">
+				<div class="modal-content">
+					<h5>Sign up here:</h5>
+					<div class="row">
+						<form class="col s12">
+							<div class="row">
+								<div class="input-field col s12 m12 l12">
+									<input id="school_name" type="text" class="validate">
+									<label for="school_name">School name</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="contact-modal">
+				<div class="modal-content">
+					<div>
+						<h5>Drop us a message:</h5>
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s6 m2 l2">
+										<input id="first_name" type="text" class="validate">
+										<label for="first_name">First Name</label>
+									</div>
+									<div class="input-field col s6 m2 l2">
+										<input id="last_name" type="text" class="validate">
+										<label for="last_name">Last Name</label>
+									</div>
+									<div class="input-field col s12 m8 l8">
+										<input id="email" type="email" class="validate">
+										<label for="email">Email</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<textarea id="textarea1" class="materialize-textarea" data-length="200"></textarea>
+										<label for="textarea1">Message</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="right" style="margin-right: 3%;">
+										<a class="btn waves-effect red modal-action modal-close">Submit</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="red darken-4 white-text" style="padding-top: 2%; padding-bottom: 2%;">
 			<div class="container">
-				Made by Adit Kirtani &amp; Rahul Mukherji.
+				Made by Adit Kirtani &amp; Rahul Mookherji.
 			</div>
 		</div>
 		<!--  Scripts-->
@@ -305,7 +389,7 @@
 			});
 		</script>
 		<script>
-			$(".responsive-video").fitVids();
+			$(".fillWidth").fitVids();
 		</script>
 		<script>
 			var menu_id = $("#"+ $('.button-collapse').attr('data-activates'));
