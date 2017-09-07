@@ -3,6 +3,10 @@
 
 	    $('.button-collapse').sideNav();
 
+	    $('#prelim-btn').click(function() {
+	    	$('#prelim-modal').modal();
+	    });
+
 	    $('#schedule-button1').click(function() {
 	        $('#day1-schedule').modal();
 	    });

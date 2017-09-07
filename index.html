@@ -35,7 +35,7 @@
 				</video>
 			</div>
 			<div class="overlay">
-				<!--TODO: Rahul put your intro thing here-->
+				
 			</div>
 		</div>
 
@@ -78,33 +78,7 @@
 		<hr>
 		<div class="container">
 			<div class="section" id="events">
-				<div class="row">
-					<h1 class="text-cen">Events</h1>
-					<div class="contain">
-						<ul class="collapsible popout" data-collapsible="accordion">
-							<li>
-								<div class="collapsible-header">Web Design <i class="medium material-icons">web</i></div>
-								<div class="collapsible-body">Make pretty websites. Simple as that.</div>
-							</li>
-							<li>
-								<div class="collapsible-header">Tech Debate <i class="medium material-icons">forum</i></div>
-								<div class="collapsible-body">Show your persuasive and analytical skills off and maybe even win a trophy. Not if we're participating though ;)</div>
-							</li>
-							<li>
-								<div class="collapsible-header">Gaming <i class="medium material-icons">games</i></div>
-								<div class="collapsible-body">You know what to do.</div>
-							</li>
-							<li>
-								<div class="collapsible-header">Film Making <i class="medium material-icons">movie</i></div>
-								<div class="collapsible-body">Make nice movies.</div>
-							</li>
-							<li>
-								<div class="collapsible-header">Hackathon <i class="medium material-icons">code</i></div>
-								<div class="collapsible-body">Code all night and lose neurons with us at ShriTeq!</div>
-							</li>
-						</ul>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 		<hr>
@@ -153,11 +127,14 @@
 					<div class="col s12 center" id="schedule">
 						<h3><i class="mdi-content-send brown-text"></i></h3>
 						<h1>Schedule</h4>
-						<p class="flow-text">Jam packed with the most creative activities we could come up with :)</p>
-						<button data-target="day1-schedule" class="btn modal-trigger" id="schedule-button1">Day 1 Schedule</button>
+						<p>Jam packed with the most creative activities we could come up with :)</p>
+						<button data-target="prelim-modal" class="btn modal-trigger center" id="prelim-btn">Prelims Schedule</button>
 						<br>
 						<br>
-						<button data-target="day2-schedule" class="btn modal-trigger" id="schedule-button2">Day 2 Schedule</button>
+						<button data-target="day1-schedule" class="btn modal-trigger center" id="schedule-button1">Day 1 Schedule</button>
+						<br>
+						<br>
+						<button data-target="day2-schedule" class="btn modal-trigger center" id="schedule-button2">Day 2 Schedule</button>
 					</div>
 				</div>
 			</div>
@@ -185,22 +162,7 @@
 
 						<div class="hide-on-small-only">
 							<div class="row" style="padding-top: 3%;">
-								<div class="col s12 m4 l4 hoverable" id="contact-card">
-									<div class="animated slideInLeft">
-										<div>
-											<h4 class="text-cen">Register</h4>
-											<hr id="hr">
-										</div>
-										<div class="text-cen">
-											Received an invite? Then proceed to register here:
-										</div>
-										<div class="center">
-											<a class="btn red darken-3 waves-effect modal-trigger card-button" id="register-button" data-target="register-modal">REGISTER</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="col s12 m4 l4 hoverable" id="contact-card">
+								<div class="col s12 m4 l4 offset-m2 offset-l2 hoverable" id="contact-card">
 									<div>
 										<h4 class="text-cen">Sign Up</h4>
 										<hr id="hr">
@@ -230,19 +192,6 @@
 
 						<div class="hide-on-med-and-up container">
 							<div class="row" style="padding-top: 3%;">
-								<div class="col s12 m4 l4 hoverable" id="contact-card">
-									<div>
-										<h4 class="text-cen">Register</h4>
-										<hr id="hr">
-									</div>
-									<div class="text-cen card-phone">
-										Received an invite? Then proceed to register here:
-									</div>
-									<div class="center">
-										<a class="btn red darken-3 waves-effect modal-trigger card-button" id="register-button" data-target="register-modal">REGISTER</a>
-									</div>
-								</div>
-
 								<div class="col s12 m4 l4 hoverable" id="contact-card">
 									<div>
 										<h4 class="text-cen">Sign Up</h4>
@@ -278,6 +227,28 @@
 
 		<!--MODAL SECTION-->
 		<div>
+			<div id="prelim-modal" class="modal">
+				<div class="modal-content">
+					<table class="striped centered">
+						<thead>
+							<tr>
+								<th>Event</th>
+								<th>Date</th>
+								<th>Day</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<a class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+				</div>
+			</div>
+
 			<div id="day1-schedule" class="modal">
 				<div class="modal-content">
 					<h3>Day 1</h3>
@@ -379,30 +350,30 @@
 				<div class="modal-content">
 					<h5>Sign up here:</h5>
 					<div class="row">
-						<form class="col s12">
+						<form class="col s12" method="POST" action="https://formspree.io/aditkirtani@gmail.com">
 							<div class="row">
 								<div class="input-field col s12 m12 l12">
-									<input id="school_name" type="text" class="validate">
+									<input id="school_name" name="school_name_su" type="text" class="validate">
 									<label for="school_name">School name</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="input-field col s6 m2 l2">
-									<input id="first_name" type="text" class="validate">
+									<input id="first_name" name="first_name_su" type="text" class="validate">
 									<label for="first_name">First Name</label>
 								</div>
 								<div class="input-field col s6 m2 l2">
-									<input id="last_name" type="text" class="validate">
+									<input id="last_name" name="last_name_su" type="text" class="validate">
 									<label for="last_name">Last Name</label>
 								</div>
 								<div class="input-field col s12 m8 l8">
-									<input id="email" type="email" class="validate">
-									<label for="email">Email</label>
+									<input id="email" name="email_su" type="email" class="validate">
+									<label for="email">Registered Email</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="right" style="margin-right: 3%;">
-									<a class="btn waves-effect red modal-action modal-close">Submit</a>
+									<input type="submit" value="Submit" class="btn waves-effect red modal-action modal-close signup-btn">
 								</div>
 							</div>
 						</form>
@@ -415,7 +386,7 @@
 					<div>
 						<h5>Drop us a message:</h5>
 						<div class="row">
-							<form class="col s12">
+							<form class="col s12 contact-form" action="https://formspree.io/aditkirtani@gmail.com" method="POST">
 								<div class="row">
 									<div class="input-field col s6 m2 l2">
 										<input id="first_name" type="text" class="validate">
@@ -450,7 +421,7 @@
 
 		<div class="red darken-4 white-text" style="padding-top: 2%; padding-bottom: 2%;">
 			<div class="container">
-				Made by Adit Kirtani &amp; Rahul Mookherji.
+				Made by Adit Kirtani &amp; Rahul Mukherji.
 			</div>
 		</div>
 		<!--  Scripts-->
@@ -476,6 +447,11 @@
 			menu_id.css('width', '240px');
 			menu_id.css('right', '');
 			menu_id.css('left', '');
+
+			window.addEventListener("hashchange", function() { scrollBy(0, -20) });
+   			var shiftWindow = function() { scrollBy(0, -50) }; 
+   			if (location.hash) shiftWindow(); 
+   			window.addEventListener("hashchange", shiftWindow);
 		</script>
 	</body>
 </html>

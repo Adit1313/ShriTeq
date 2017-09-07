@@ -84,7 +84,6 @@ p {
 
 #red-bg {
 	color: rgb(183, 28, 28);
-	font-family: "Russo One";
 }
 
 #red-bg:hover {
@@ -192,24 +191,4 @@ video.fillWidth {
 #hr {
 	margin-left: 30px;
 	margin-right: 30px;
-}
-
-@keyframes slideInLeft {
-	from {
-		transform: translate3d(-100%, 0, 0);
-    	visibility: visible;
-  	}
-
-	to {
-		transform: translate3d(0, 0, 0);
-	}
-}
-
-.slideInLeft {
-	animation-name: slideInLeft;
-}
-
-.animated {
-	animation-duration: 1s;
-	animation-fill-mode: both;
 }
