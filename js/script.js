@@ -9,3 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
 $(document).ready(function(){
     $('#top').sticky({topSpacing: 0})
 })
+
+$( window ).load(function() {
+    $('.fillWidth' ).get(0).play();
+ });

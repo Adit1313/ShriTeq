@@ -9,6 +9,7 @@
 		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link rel="icon" href="res/favicon.png">
 	</head>
 	<body>
@@ -27,34 +28,27 @@
 				</div>
 			</div>
 		</div>
-		<!--
-		<div style="height: 100vh;" class="fullscreen-bg">
-			<video muted loop autoplay class="fullscreen-bg__video" src="res/sunrise.mp4">
-			</video>
-		</div>
-		-->
+		
 		<div class="video-bg">
 			<div class="video-holder">
-				<video class="fillWidth" autplay loop muted src="res/sunrise.mp4">
-					
+				<video class="fillWidth" autoplay loop src="res/sunrise.mp4">
 				</video>
 			</div>
 			<div class="overlay">
-				<a href="" class="glitch">ShriTeq</a>
+				<!--TODO: Rahul put your intro thing here-->
 			</div>
 		</div>
 
 		<div class="navbar">
 			<nav class="white nb" role="navigation" id="top">
 				<div class="nav-wrapper">
-					<a class="brand-logo left hide-on-med-and-down" style="padding-top: 6px; padding-left: 1vw;"><img src="res/shriteq.png" class="logo" style="height: 6vh;"></a>
-					<a class="brand-logo center hide-on-large-only logo" style="padding-top: 7px;"><img src="res/shriteq.png" style="height: 45px;"></a>
+					<a class="brand-logo"><img src="res/shriteq.png" class="logo"></a>
 					<ul class="right hide-on-med-and-down" style="font-size: 3em;">
 						<li><a href="#about" id="red-bg">About</a></li>
 						<li><a href="#events" id="red-bg">Events</a></li>
 						<li><a href="#speakers" id="red-bg">Speakers</a></li>
 						<li><a href="#schedule" id="red-bg">Schedule</a></li>
-						<li><a href="#join" id="red-bg">Register</a></li>
+						<li><a href="#join" id="red-bg">Contact</a></li>
 					</ul>
 					<a href="#" data-activates="slide-out" class="button-collapse left left-aligned"><i class="material-icons">menu</i></a>
 				</div>
@@ -65,13 +59,13 @@
 			<li><a href="#events" class=".navbar-links">Events</a></li>
 			<li><a href="#speakers" class=".navbar-links">Speakers</a></li>
 			<li><a href="#schedule" class=".navbar-links">Schedule</a></li>
-			<li><a href="#join" class=".navbar-links">Register</a></li>
+			<li><a href="#join" class=".navbar-links">Contact</a></li>
 		</ul>
 		<h1 id="about" class="red-text text-darken-4 text-cen">ShriTeq 2017</h1>
 
 		<div class="container">
 			<div class="section">
-				<p>
+				<p style="text-align: center;">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -189,43 +183,90 @@
 							</div>
 						</div>
 
-						<div class="row" style="padding-top: 3%;">
-							<div class="col s12 m4 l4 hoverable" id="contact-card">
-								<div>
-									<h4 class="text-cen">Register</h4>
-									<hr>
+						<div class="hide-on-small-only">
+							<div class="row" style="padding-top: 3%;">
+								<div class="col s12 m4 l4 hoverable" id="contact-card">
+									<div class="animated slideInLeft">
+										<div>
+											<h4 class="text-cen">Register</h4>
+											<hr id="hr">
+										</div>
+										<div class="text-cen">
+											Received an invite? Then proceed to register here:
+										</div>
+										<div class="center">
+											<a class="btn red darken-3 waves-effect modal-trigger card-button" id="register-button" data-target="register-modal">REGISTER</a>
+										</div>
+									</div>
 								</div>
-								<div class="text-cen">
-									Received an invite? Then proceed to register here:
+
+								<div class="col s12 m4 l4 hoverable" id="contact-card">
+									<div>
+										<h4 class="text-cen">Sign Up</h4>
+										<hr id="hr">
+									</div>
+									<div class="text-cen">
+										Want to participate? Then sign up for an invite right here:
+									</div>
+									<div class="center">
+										<a class="btn red darken-3 waves-effect modal-trigger card-button" id="signup-button" data-target="signup-modal">SIGN UP</a>
+									</div>
 								</div>
-								<div class="center">
-									<a class="btn red darken-3 waves-effect modal-trigger card-button" id="register-button" data-target="register-modal">REGISTER</a>
+
+								<div class="col s12 m4 l4 hoverable" id="contact-card">
+									<div>
+										<h4 class="text-cen">Contact</h4>
+										<hr id="hr">
+									</div>
+									<div class="text-cen">
+										Any problem? Want to drop in a message? Please do so below:
+									</div>
+									<div class="center">
+										<a class="btn red darken-3 waves-effect modal-trigger card-button" id="contact-button" data-target="contact-modal">CONTACT</a>
+									</div>
 								</div>
 							</div>
+						</div>
 
-							<div class="col s12 m4 l4 hoverable" id="contact-card">
-								<div>
-									<h4 class="text-cen">Sign Up</h4>
-									<hr>
+						<div class="hide-on-med-and-up container">
+							<div class="row" style="padding-top: 3%;">
+								<div class="col s12 m4 l4 hoverable" id="contact-card">
+									<div>
+										<h4 class="text-cen">Register</h4>
+										<hr id="hr">
+									</div>
+									<div class="text-cen card-phone">
+										Received an invite? Then proceed to register here:
+									</div>
+									<div class="center">
+										<a class="btn red darken-3 waves-effect modal-trigger card-button" id="register-button" data-target="register-modal">REGISTER</a>
+									</div>
 								</div>
-								<div class="text-cen">
-									Want to participate? Then sign up for an invite right here:
-								</div>
-								<div class="center">
-									<a class="btn red darken-3 waves-effect modal-trigger card-button" id="signup-button" data-target="signup-modal">SIGN UP</a>
-								</div>
-							</div>
 
-							<div class="col s12 m4 l4 hoverable" id="contact-card">
-								<div>
-									<h4 class="text-cen">Contact</h4>
-									<hr>
+								<div class="col s12 m4 l4 hoverable" id="contact-card">
+									<div>
+										<h4 class="text-cen">Sign Up</h4>
+										<hr id="hr">
+									</div>
+									<div class="text-cen card-phone">
+										Want to participate? Then sign up for an invite right here:
+									</div>
+									<div class="center">
+										<a class="btn red darken-3 waves-effect modal-trigger card-button" id="signup-button" data-target="signup-modal">SIGN UP</a>
+									</div>
 								</div>
-								<div class="text-cen">
-									Any problem? Want to drop in a message? Please do so below:
-								</div>
-								<div class="center">
-									<a class="btn red darken-3 waves-effect modal-trigger card-button" id="contact-button" data-target="contact-modal">CONTACT</a>
+
+								<div class="col s12 m4 l4 hoverable" id="contact-card">
+									<div>
+										<h4 class="text-cen card-phone">Contact</h4>
+										<hr id="hr">
+									</div>
+									<div class="text-cen">
+										Any problem? Want to drop in a message? Please do so below:
+									</div>
+									<div class="center">
+										<a class="btn red darken-3 waves-effect modal-trigger card-button" id="contact-button" data-target="contact-modal">CONTACT</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -308,7 +349,30 @@
 			</div>
 
 			<div class="modal" id="register-modal">
-								
+				<div class="modal-content">
+					<h5>Register your school:</h5>
+					<div class="row">
+						<form class="col s12">
+							<div class="row">
+								<div class="input-field col s12 m12 l12">
+									<input id="school_name" type="text" class="validate">
+									<label for="school_name">School name</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12 m12 l12">
+									<input id="unique_key" type="password">
+									<label for="unique_key">School's Unique Code</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="right" style="margin-right: 3%;">
+									<a class="btn waves-effect red modal-action modal-close">Submit</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 
 			<div class="modal" id="signup-modal">
@@ -320,6 +384,25 @@
 								<div class="input-field col s12 m12 l12">
 									<input id="school_name" type="text" class="validate">
 									<label for="school_name">School name</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s6 m2 l2">
+									<input id="first_name" type="text" class="validate">
+									<label for="first_name">First Name</label>
+								</div>
+								<div class="input-field col s6 m2 l2">
+									<input id="last_name" type="text" class="validate">
+									<label for="last_name">Last Name</label>
+								</div>
+								<div class="input-field col s12 m8 l8">
+									<input id="email" type="email" class="validate">
+									<label for="email">Email</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="right" style="margin-right: 3%;">
+									<a class="btn waves-effect red modal-action modal-close">Submit</a>
 								</div>
 							</div>
 						</form>
@@ -376,18 +459,15 @@
 		<script src="js/init.js"></script>
 		<script src="js/sticky.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/scrollreveal.js"></script>
 		<script src="js/jquery.fitvids.js"></script>
 		<script>
-			$("a").on('click', function(event) {
-				if (this.hash !== "") {
-					event.preventDefault();
-					var hash = this.hash;
-					$('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){
-						window.location.hash = hash;
-					});
-				}
-			});
+			window.sr = ScrollReveal();
+			sr.reveal('#contact-card');
 		</script>
+
+		
+
 		<script>
 			$(".fillWidth").fitVids();
 		</script>
