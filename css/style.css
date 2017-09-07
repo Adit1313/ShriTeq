@@ -213,3 +213,19 @@ video.fillWidth {
 	animation-duration: 1s;
 	animation-fill-mode: both;
 }
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+.arrow {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    margin-left: -20px;
+    width: 30px;
+    height: 30px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiP…0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+    background-size: contain;
+}
