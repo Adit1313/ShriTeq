@@ -39,6 +39,7 @@
 	.logo {
 		height: 6vh;
 		margin-top: 5%;
+		padding-bottom: 5%
 	}
 }
 
@@ -47,12 +48,13 @@
 		height: 6vh;
 		margin-top: 15%;
 		margin-left: 15%;
+		padding-bottom: 15%
 	}
 }
 
 @media screen and (max-width: 1024px) {
 	.logo {
-		height: 3vh;
+		height: 5vh;
 		margin-top: 15%;
 		margin-left: 10%;
 	}
@@ -62,6 +64,7 @@
 	.logo {
 		height: 45px;
 		margin-top: 1vh;
+		padding-bottom: 1vh;
 	}
 }
 
