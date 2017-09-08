@@ -7,13 +7,28 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen, projection"/>
 		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link rel="stylesheet" type="text/css" href="css/anime.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link rel="icon" href="res/favicon.png">
 	</head>
 	<body>
-		
+		<div class="preloader-background">
+			<div class="preloader-wrapper big active">
+				<div class="spinner-layer spinner-blue">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="gap-patch">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 		<!-- 
 		<div class="video-bg">
@@ -53,11 +68,12 @@
 
 
 		
-		<div>
+		<div style="height: 90vh;">
 			<h1 id="about" class="red-text text-darken-4 text-cen">ShriTeq 2017</h1>
+
 			<div class="container">
 				<div class="section">
-					<p style="text-align: center; font-size: 1.2rem !important;">
+					<p style="text-align: center;">
 						The Shri Ram School, Moulsari Campus is proud to present ShriTeq, the only technology symposium of its kind. Built on the success of three previous iterations, ShriTeq 2017 is on a larger and grander stage than ever before.
 						ShriTeq consists of four events: the Technology Quiz, the Hackathon, Scratch Animation, and our moviemaking event, Lights, Camera, Action! Our flagship event, the Technology Quiz hosted by tech guru Rajiv Makhni, is North India’s largest tech quiz at the school level.
 						Participants in the Hackathon will be challenged to innovate and create high-quality products by harnessing the power of technology, while the creative events will challenge participants to combine creativity and technical skill to intertwine art and technology.
@@ -76,7 +92,7 @@
 						<div class="col s12 m4 l4">
 							<div class="card red darken-4 lca-card">
 								<div class="card-content white-text">
-									<span class="card-title" style="text-decoration: underline;">Lights, Camera, Action!</span>
+									<span class="card-title">Lights, Camera, Action!</span>
 									<em>Junior Category</em>
 									<p style="font-size: 0.8rem;">
 										Class 5 <br>
@@ -90,7 +106,7 @@
 						<div class="col s12 m4 l4">
 							<div class="card white sa_card">
 								<div class="card-content red-text text-darken-4">
-									<span class="card-title" style="text-decoration: underline;">Scratch Animation</span>
+									<span class="card-title">Scratch Animation</span>
 									<em>Junior Category</em>
 									<p style="font-size: 0.8rem;">
 										Class 5 <br>
@@ -105,7 +121,7 @@
 						<div class="col s12 m4 l4">
 							<div class="card red darken-4">
 								<div class="card-content white-text">
-									<span class="card-title" style="text-decoration: underline;">Hackathon</span>
+									<span class="card-title">Hackathon</span>
 									<em>Senior Category</em>
 									<p style="font-size: 0.8rem;">
 										Classes 9-12 <br>
@@ -121,7 +137,7 @@
 						<div class="col s12 m4 l4">
 							<div class="card white">
 								<div class="card-content red-text text-darken-4">
-									<span class="card-title" style="text-decoration: underline;">Junior Quiz</span>
+									<span class="card-title">Junior Quiz</span>
 									<em>Junior Category</em>
 									<p style="font-size: 0.8rem;">
 										Classes 9-12 <br>
@@ -135,7 +151,7 @@
 						<div class="col s12 m4 l4">
 							<div class="card red darken-4">
 								<div class="card-content white-text">
-									<span class="card-title" style="text-decoration: underline;">Middle School Quiz</span>
+									<span class="card-title">Middle School Quiz</span>
 									<em>Middle School Category</em>
 									<p style="font-size: 0.8rem;">
 										Classes 9-12 <br>
@@ -149,7 +165,7 @@
 						<div class="col s12 m4 l4">
 							<div class="card white">
 								<div class="card-content red-text text-darken-4">
-									<span class="card-title" style="text-decoration: underline;">Senior Quiz</span>
+									<span class="card-title">Senior Quiz</span>
 									<em>Senior Category</em>
 									<p style="font-size: 0.8rem;">
 										Classes 9-12 <br>
@@ -217,16 +233,16 @@
 					<div class="col s12 center" id="schedule">
 						<h3><i class="mdi-content-send brown-text"></i></h3>
 						<h1>Schedule</h4>
-						<button data-target="prelim-modal" class="btn modal-trigger center" id="prelim-btn">Prelims Schedule</button>
+						<button data-target="prelim-modal" class="btn modal-trigger red center" id="prelim-btn">Prelims Schedule</button>
 						<br>
 						<br>
-						<button data-target="day1-schedule" class="btn modal-trigger center" id="schedule-button1">Day 1 Schedule</button>
+						<button data-target="day1-schedule" class="btn modal-trigger red center" id="schedule-button1">Day 1 Schedule</button>
 						<br>
 						<br>
-						<button data-target="day2-schedule" class="btn modal-trigger center" id="schedule-button2">Day 2 Schedule</button>
+						<button data-target="day2-schedule" class="btn modal-trigger red center" id="schedule-button2">Day 2 Schedule</button>
 						<br>
 						<br>
-						<button data-target="day3-schedule" class="btn modal-trigger center" id="schedule-button3">Day 3 Schedule</button>
+						<button data-target="day3-schedule" class="btn modal-trigger red center" id="schedule-button3">Day 3 Schedule</button>
 					</div>
 				</div>
 			</div>
@@ -260,7 +276,7 @@
 										<hr id="hr">
 									</div>
 									<div class="center">
-										<a class="btn red darken-3 waves-effect modal-trigger card-button" id="signup-button" data-target="signup-modal">SIGN UP</a>
+										<a class="btn red waves-effect modal-trigger card-button" id="signup-button" data-target="signup-modal">SIGN UP</a>
 									</div>
 								</div>
 
@@ -270,7 +286,7 @@
 										<hr id="hr">
 									</div>
 									<div class="center">
-										<a class="btn red darken-3 waves-effect modal-trigger card-button" id="contact-button" data-target="contact-modal">CONTACT</a>
+										<a class="btn red waves-effect modal-trigger card-button" id="contact-button" data-target="contact-modal">CONTACT</a>
 									</div>
 								</div>
 							</div>
@@ -287,7 +303,7 @@
 										Want to participate? Then sign up for an invite right here:
 									</div>
 									<div class="center">
-										<a class="btn red darken-3 waves-effect modal-trigger card-button" id="signup-button" data-target="signup-modal">SIGN UP</a>
+										<a class="btn red waves-effect modal-trigger card-button" id="signup-button" data-target="signup-modal">SIGN UP</a>
 									</div>
 								</div>
 
@@ -300,7 +316,7 @@
 										Any problem? Want to drop in a message? Please do so below:
 									</div>
 									<div class="center">
-										<a class="btn red darken-3 waves-effect modal-trigger card-button" id="contact-button" data-target="contact-modal">CONTACT</a>
+										<a class="btn red waves-effect modal-trigger card-button" id="contact-button" data-target="contact-modal">CONTACT</a>
 									</div>
 								</div>
 							</div>
@@ -470,33 +486,6 @@
 				</div>
 				<div class="modal-footer">
 					<a class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
-				</div>
-			</div>
-
-			<div class="modal" id="register-modal">
-				<div class="modal-content">
-					<h5>Register your school:</h5>
-					<div class="row">
-						<form class="col s12">
-							<div class="row">
-								<div class="input-field col s12 m12 l12">
-									<input id="school_name" type="text" class="validate">
-									<label for="school_name">School name</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s12 m12 l12">
-									<input id="unique_key" type="password">
-									<label for="unique_key">School's Unique Code</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="right" style="margin-right: 3%;">
-									<a class="btn waves-effect red modal-action modal-close">Submit</a>
-								</div>
-							</div>
-						</form>
-					</div>
 				</div>
 			</div>
 
