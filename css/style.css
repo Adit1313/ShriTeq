@@ -223,3 +223,7 @@ video.fillWidth {
 .waves-effect {
  	position: static;
 }
+
+.card-button {
+	margin-top: 3%;
+}
