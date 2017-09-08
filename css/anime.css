@@ -16,7 +16,6 @@
   height: 100vh;
   overflow: hidden;
   background: #111;
-  animation: glow 8s both;
 }
 span.letter {
   font: 900 15vw Raleway;
