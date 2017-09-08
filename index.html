@@ -7,27 +7,14 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen, projection"/>
 		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link rel="stylesheet" type="text/css" href="css/anime.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link rel="icon" href="res/favicon.png">
 	</head>
 	<body>
-		<div class="preloader-background">
-			<div class="preloader-wrapper big active">
-				<div class="spinner-layer spinner-blue">
-					<div class="circle-clipper left">
-						<div class="circle"></div>
-					</div>
-					<div class="gap-patch">
-						<div class="circle"></div>
-					</div>
-					<div class="circle-clipper right">
-						<div class="circle"></div>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 		
 		<!-- 
 		<div class="video-bg">
@@ -41,6 +28,17 @@
 			</div>
 		</div> 
 		-->
+
+		<div class="intro" style="height: 100vh; overflow: hidden;">
+			<span class="letter" data-text="S"></span>
+			<span class="letter" data-text="H"></span>
+			<span class="letter" data-text="R"></span>
+			<span class="letter" data-text="I"></span>
+			<span class="letter" data-text="T"></span>
+			<span class="letter" data-text="E"></span>
+			<span class="letter" data-text="Q"></span>
+		</div>
+
 		<div class="navbar">
 			<nav class="white nb" role="navigation" id="top">
 				<div class="nav-wrapper">
@@ -63,18 +61,24 @@
 			<li><a href="#schedule" class=".navbar-links">Schedule</a></li>
 			<li><a href="#join" class=".navbar-links">Contact</a></li>
 		</ul>
-		<h1 id="about" class="red-text text-darken-4 text-cen">ShriTeq 2017</h1>
 
-		<div class="container">
-			<div class="section">
-				<p style="text-align: center;">
-					The Shri Ram School, Moulsari Campus is proud to present ShriTeq, the only technology symposium of its kind. Built on the success of three previous iterations, ShriTeq 2017 is on a larger and grander stage than ever before.
-					ShriTeq consists of four events: the Technology Quiz, the Hackathon, Scratch Animation, and our moviemaking event, Lights, Camera, Action! Our flagship event, the Technology Quiz hosted by tech guru Rajiv Makhni, is North India’s largest tech quiz at the school level.
-					Participants in the Hackathon will be challenged to innovate and create high-quality products by harnessing the power of technology, while the creative events will challenge participants to combine creativity and technical skill to intertwine art and technology.
-					Featuring over 25 prestigious schools in the Delhi-NCR, ShriTeq promises to be the experience of a lifetime.
-				</p>
+
+		
+		<div>
+			<h1 id="about" class="red-text text-darken-4 text-cen">ShriTeq 2017</h1>
+
+			<div class="container">
+				<div class="section">
+					<p style="text-align: center;">
+						The Shri Ram School, Moulsari Campus is proud to present ShriTeq, the only technology symposium of its kind. Built on the success of three previous iterations, ShriTeq 2017 is on a larger and grander stage than ever before.
+						ShriTeq consists of four events: the Technology Quiz, the Hackathon, Scratch Animation, and our moviemaking event, Lights, Camera, Action! Our flagship event, the Technology Quiz hosted by tech guru Rajiv Makhni, is North India’s largest tech quiz at the school level.
+						Participants in the Hackathon will be challenged to innovate and create high-quality products by harnessing the power of technology, while the creative events will challenge participants to combine creativity and technical skill to intertwine art and technology.
+						Featuring over 25 prestigious schools in the Delhi-NCR, ShriTeq promises to be the experience of a lifetime.
+					</p>
+				</div>
 			</div>
 		</div>
+
 		<hr>
 		<div class="section" id="events">
 			<h1>Events</h1>
@@ -570,8 +574,7 @@
 		<script>
 			window.sr = ScrollReveal();
 			sr.reveal('#contact-card');
-			sr.reveal('.lca-card', {origin: 'left', duration: 1200});
-			sr.reveal()
+			sr.reveal('.card', {duration: 1500}, 50);
 		</script>
 
 		

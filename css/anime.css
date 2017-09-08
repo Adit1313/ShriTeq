@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,900);
+@keyframes flip-top {
+  from {
+    transform: rotate(50deg) translateY(120vh);
+  }
+}
+@keyframes flip-bottom {
+  from {
+    transform: rotate(-50deg) translateY(120vh);
+  }
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #111;
+  animation: glow 8s both;
+}
+span.letter {
+  font: 900 15vw Raleway;
+  position: relative;
+  display: inline-block;
+  perspective: 500px;
+}
+span:nth-child(odd):before {
+  animation-name: flip-top;
+}
+span:nth-child(odd):after {
+  animation-name: flip-bottom;
+}
+span:nth-child(even):before {
+  animation-name: flip-bottom;
+}
+span:nth-child(even):after {
+  animation-name: flip-top;
+}
+span:nth-child(1n + 0):before {
+  color: #4ec0b6;
+}
+span:nth-child(1n + 0):after {
+  color: #4ea4c0;
+}
+span:nth-child(2n + 1):before {
+  color: #3967cb;
+}
+span:nth-child(2n + 1):after {
+  color: #3c39cb;
+}
+span:nth-child(3n + 2):before {
+  color: #fdcd2f;
+}
+span:nth-child(3n + 2):after {
+  color: #e8fd2f;
+}
+span:nth-child(4n + 3):before {
+  color: #e23942;
+}
+span:nth-child(4n + 3):after {
+  color: #e26839;
+}
+span:nth-child(1):before {
+  animation-delay: sin(0.11111) * 8s;
+}
+span:nth-child(1):after {
+  animation-delay: sin(0.16667) * 8s;
+}
+span:nth-child(2):before {
+  animation-delay: sin(0.22222) * 8s;
+}
+span:nth-child(2):after {
+  animation-delay: sin(0.27778) * 8s;
+}
+span:nth-child(3):before {
+  animation-delay: sin(0.33333) * 8s;
+}
+span:nth-child(3):after {
+  animation-delay: sin(0.38889) * 8s;
+}
+span:nth-child(4):before {
+  animation-delay: sin(0.44444) * 8s;
+}
+span:nth-child(4):after {
+  animation-delay: sin(0.5) * 8s;
+}
+span:nth-child(5):before {
+  animation-delay: sin(0.55556) * 8s;
+}
+span:nth-child(5):after {
+  animation-delay: sin(0.61111) * 8s;
+}
+span:nth-child(6):before {
+  animation-delay: sin(0.66667) * 8s;
+}
+span:nth-child(6):after {
+  animation-delay: sin(0.72222) * 8s;
+}
+span:nth-child(7):before {
+  animation-delay: sin(0.77778) * 8s;
+}
+span:nth-child(7):after {
+  animation-delay: sin(0.83333) * 8s;
+}
+span:nth-child(8):before {
+  animation-delay: sin(0.88889) * 8s;
+}
+span:nth-child(8):after {
+  animation-delay: sin(0.94444) * 8s;
+}
+span:nth-child(9):before {
+  animation-delay: sin(1) * 8s;
+}
+span:nth-child(9):after {
+  animation-delay: sin(1.05556) * 8s;
+}
+span:before, span:after {
+  display: block;
+  content: attr(data-text);
+  animation: 0.88889s ease-out both;
+  animation-name: inherit;
+  text-shadow: 0 0 1em;
+}
+span:before {
+  -webkit-clip-path: polygon(0 0 100% 0, 100% 100%);
+  clip-path: polygon(0 0 100% 0, 100% 100%);
+  position: absolute;
+  transform-origin: left center;
+  color: #4ec0b6;
+}
+span:after {
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  color: #3967cb;
+}
