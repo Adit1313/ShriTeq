@@ -35,36 +35,10 @@
 
 /* Navbar Logo media queries */
 
-@media screen and (min-width: 1800px) {
-	.logo {
-		height: 6vh;
-		margin-top: 5%;
-	}
-}
-
-@media screen and (min-width: 1224px) {
-	.logo {
-		height: 6vh;
-		margin-top: 15%;
-		margin-left: 15%;
-		padding-bottom: 15%
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	.logo {
-		height: 5vh;
-		margin-top: 15%;
-		margin-left: 10%;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.logo {
-		height: 45px;
-		margin-top: 1vh;
-		padding-bottom: 1vh;
-	}
+.logo {
+	height: 2.3rem;
+	margin-top: 2%;
+	margin-left: 10%;
 }
 
 h1 {
