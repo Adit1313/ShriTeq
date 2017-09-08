@@ -220,6 +220,7 @@ video.fillWidth {
 .card-action > a {
 	font-size: 1rem !important;
 }
- .waves-effect {
+
+.waves-effect {
  	position: static;
- }
+}
