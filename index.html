@@ -88,7 +88,7 @@
 										<hr id="hr">
 									</div>
 									<div class="center">
-										<a class="btn red waves-effect modal-trigger" href="">Sign Up</a>
+										<a class="btn red waves-effect modal-trigger" data-target="signup-modal" id="signup-button">Sign Up</a>
 									</div>
 								</div>
 							</div>
@@ -98,23 +98,23 @@
 										<hr id="hr">
 									</div>
 									<div class="center">
-										<a class="btn red waves-effect modal-trigger">CONTACT</a>
+										<a class="btn red waves-effect modal-trigger" data-target="contact-modal" id="contact-button">CONTACT</a>
 									</div>
 							</div>
 						</div>
 					</div>
 
 				<div class="hide-on-med-and-up container">
-				<div class="row" style="padding-top: 3%;">
-							<div class="col s12 m4 l4 hoverable" id="contact-card">
-								<div>
-									<h4 class="text-cen">Sign Up</h4>
-									<hr id="hr">
-								</div>
-								<div class="center">
-									<a class="btn red waves-effect modal-trigger card-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdGUKcxHzZvOmM7WSsWjfZ3LPn4r3Te_hiFt-f03i1TC9KeBQ/viewform" style="z-index: 0;">SIGN UP</a>									
-								</div>
+					<div class="row" style="padding-top: 3%;">
+						<div class="col s12 m4 l4 hoverable" id="contact-card">
+							<div>
+								<h4 class="text-cen">Sign Up</h4>
+								<hr id="hr">
 							</div>
+							<div class="center">
+								<a class="btn red waves-effect card-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdGUKcxHzZvOmM7WSsWjfZ3LPn4r3Te_hiFt-f03i1TC9KeBQ/viewform" style="z-index: 0;">SIGN UP</a>									
+							</div>
+						</div>
 								
 						<div cass="col s12 m4 l4 hoverable" id="contact-card">
 							<div>
@@ -122,7 +122,7 @@
 								<hr id="hr">
 							</div>
 							<div class="center">
-								<a class="btn red waves-effect card-button" id="contact-button" data-target="contact-modal">CONTACT</a>
+								<a class="btn red waves-effect card-button" href="https://docs.google.com/forms/d/e/1FAIpQLScUzl_KhkdU-TOZZGCzHVJcMguUceiZOQ_oxOIY9yGeai6aaA/viewform">CONTACT</a>
 							</div>
 						</div>
 					</div>
@@ -163,9 +163,9 @@
 				</div>		
 			</div>
 			<div class="row">
-				<div class="col s12 m3 l3 offset-m2 offset-l2">
-					<div class="card red darken-4">
-						<div class="card-content white-text">
+				<div class="col s12 m3 l3 offset-m3 offset-l3">
+					<div class="card white darken-4">
+						<div class="card-content red-text text-darken-4">
 							<span class="card-title">Hackathon</span>
 							<em>Senior Category</em>
 							<p style="font-size: 0.8rem;">
@@ -178,22 +178,8 @@
 				</div>
 
 				<div class="col s12 m3 l3">
-					<div class="card white">
-						<div class="card-content red-text text-darken-4">
-							<span class="card-title">Junior Quiz</span>
-							<em>Junior Category</em>
-							<p style="font-size: 0.8rem;">
-								Classes 9-12 <br>
-								1 Team per school <br>
-								5 Participants in a team
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col s12 m3 l3">
-					<div class="card white">
-						<div class="card-content red-text text-darken-4">
+					<div class="card red darken-4">
+						<div class="card-content white-text">
 							<span class="card-title">Junior Quiz</span>
 							<em>Junior Category</em>
 							<p style="font-size: 0.8rem;">
@@ -487,7 +473,8 @@
 
 			<div>
 				<iframe class="modal" id="signup-modal" src="https://docs.google.com/forms/d/e/1FAIpQLSdGUKcxHzZvOmM7WSsWjfZ3LPn4r3Te_hiFt-f03i1TC9KeBQ/viewform?embedded=true" style="width: 60%; height: 100%;" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
+			</div>
+			<div>
 				<iframe class="modal" id="contact-modal" src="https://docs.google.com/forms/d/e/1FAIpQLScUzl_KhkdU-TOZZGCzHVJcMguUceiZOQ_oxOIY9yGeai6aaA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 			</div>
 
