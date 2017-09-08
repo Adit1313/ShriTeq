@@ -7,7 +7,6 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen, projection"/>
 		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-		<link rel="stylesheet" type="text/css" href="css/anime.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -44,8 +43,8 @@
 		-->
 
 		<div class="navbar">
-			<nav class="white nb" role="navigation" id="top">
-				<div class="nav-wrapper">
+			<nav class="white nb" role="navigation" id="top" style="z-index: 2;">
+				<div class="nav-wrapper" style="z-index: 2;">
 					<a class="brand-logo"><img src="res/shriteq.png" class="logo"></a>
 					<ul class="right hide-on-med-and-down" style="font-size: 3em;">
 						<li><a href="#about" id="red-bg">About</a></li>
@@ -85,11 +84,11 @@
 							<div class="col s12 m4 l4 offset-m2 offset-l2 hoverable" id="contact-card">
 								<div style="z-index: -1;">
 									<div>
-										<h4 class="text-cen" style="z-index: -100000 !important;">Sign Up</h4>
+										<h4 class="text-cen" style="z-index: -1 !important;">Sign Up</h4>
 										<hr id="hr">
 									</div>
 									<div class="center">
-										<a class="btn red waves-effect modal-trigger card-button" id="signup-button" data-target="signup-modal" style="z-index: -1;">SIGN UP</a>
+										<button class="btn red waves-effect modal-trigger card-button" id="signup-button" data-target="signup-modal">SIGN UP</button>
 									</div>
 								</div>
 							</div>
@@ -99,40 +98,36 @@
 									<hr id="hr">
 								</div>
 								<div class="center">
-									<a class="btn red waves-effect modal-trigger card-button" id="contact-button" data-target="contact-modal" style="z-index: -1;">CONTACT</a>
+									<a class="btn red waves-effect modal-trigger card-button" id="contact-button" data-target="contact-modal">CONTACT</a>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="hide-on-med-and-up container">
-						<div class="row" style="padding-top: 3%;">
+				<div class="hide-on-med-and-up container">
+				<div class="row" style="padding-top: 3%;">
 							<div class="col s12 m4 l4 hoverable" id="contact-card">
 								<div>
 									<h4 class="text-cen">Sign Up</h4>
 									<hr id="hr">
 								</div>
-								<div class="text-cen card-phone">
-									Want to participate? Then sign up for an invite right here:
-								</div>
 								<div class="center">
-									<a class="btn red waves-effect modal-trigger card-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdGUKcxHzZvOmM7WSsWjfZ3LPn4r3Te_hiFt-f03i1TC9KeBQ/iewform">SIGN UP</a>									</div>
+									<a class="btn red waves-effect modal-trigger card-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdGUKcxHzZvOmM7WSsWjfZ3LPn4r3Te_hiFt-f03i1TC9KeBQ/viewform" style="z-index: 0;">SIGN UP</a>									
 								</div>
-								<div cass="col s12 m4 l4 hoverable" id="contact-card">
-								<div>
-									<h4 class="text-cen card-phone">Contact</h4>
-									<hr id="hr">
-								</div>
-						<div class="text-cen">
-							Any problem? Want to drop in a message? Please do so below:
-						</div>
-						<div class="center">
-							<a class="btn red waves-effect modal-trigger card-button" id="contact-button" data-target="contact-modal">CONTACT</a>
+							</div>
+								
+						<div cass="col s12 m4 l4 hoverable" id="contact-card">
+							<div>
+								<h4 class="text-cen card-phone">Contact</h4>
+								<hr id="hr">
+							</div>
+							<div class="center">
+								<a class="btn red waves-effect card-button" id="contact-button" data-target="contact-modal">CONTACT</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 
 		<hr>
