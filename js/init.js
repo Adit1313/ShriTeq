@@ -15,6 +15,10 @@
 	        $('#day2-schedule').modal();
 	    });
 
+	    $('#schedule-button3').click(function() {
+	    	$('#day3-schedule').modal();
+	    });
+
 	    $('#contact-button').click(function() {
 	        $('#contact-modal').modal();
 	    });
