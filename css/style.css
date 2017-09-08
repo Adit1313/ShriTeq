@@ -216,4 +216,12 @@ video.fillWidth {
 
 .card-title {
 	font-size: 1.35rem !important;
+<<<<<<< HEAD
 }
+=======
+}
+
+.card-action > a {
+	font-size: 1rem !important;
+}
+>>>>>>> e58508ef26573e9d95e285cbc7d6376aa42de3f4
