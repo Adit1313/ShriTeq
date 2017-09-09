@@ -119,14 +119,6 @@ video.fillWidth {
 	width: 100%;
 }
 
-.button-holder {
-	position: absolute;
-	top: 80%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-}
-
 .intro-button {
 	border: 1px red solid;
 	border-radius: 5px;
@@ -188,6 +180,10 @@ video.fillWidth {
 
 .card-title {
 	font-size: 1.35rem !important;
+}
+
+.card-action {
+	z-index: -12;
 }
 
 .card-action > a {
