@@ -31,5 +31,16 @@
 	        $('#register-modal').modal();
 	    });
 
-	}); // end of document ready
-})(jQuery); // end of jQuery name space
+	    $("a").on('click', function(event) {
+
+    		if (this.hash !== "") {
+      			event.preventDefault();
+			    var hash = this.hash;
+			    $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){
+		        	window.location.hash = hash;
+		    	});
+    		}
+  		});
+
+	});
+})(jQuery);
