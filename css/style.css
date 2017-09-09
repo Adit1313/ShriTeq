@@ -183,7 +183,7 @@ video.fillWidth {
 }
 
 .card {
-	z-index: -1;
+	z-index: -3;
 }
 
 .card-title {
