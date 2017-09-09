@@ -14,7 +14,9 @@ $( window ).load(function() {
     $('.fillWidth' ).get(0).play();
  });
 
-$(window).scroll(function() {    
+console.log($(window))
+$(document).onload(function() {
+	$(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
     var plz = $(window).height();
@@ -22,7 +24,8 @@ $(window).scroll(function() {
      //>=, not <=
     if (scroll >= plz) {
         $(".fortheloveofgod").addClass("navbar-fixed");
-    } else if (scrol < plz) {
-    	$(".fortheloveofgod").removeClass(".navbar-fixed");
+    } else if (scroll < plz) {
+    	$(".fortheloveofgod").removeClass("navbar-fixed");
     }
+});
 });
