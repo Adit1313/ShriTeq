@@ -201,6 +201,7 @@ video.fillWidth {
 	background-position: left top;
 	width: 100vw;
 	height: 100vh;
+	overflow: hidden;
 }
 
 .details {
