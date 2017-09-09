@@ -12,20 +12,21 @@ $(document).ready(function(){
 
 $( window ).load(function() {
     $('.fillWidth' ).get(0).play();
+    alert();
  });
 
-console.log($(window))
-$(document).onload(function() {
+$(document).load(function() {
+
 	$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
+	    var scroll = $(window).scrollTop();
 
-    var plz = $(window).height();
+	    var plz = $(window).height();
 
-     //>=, not <=
-    if (scroll >= plz) {
-        $(".fortheloveofgod").addClass("navbar-fixed");
-    } else if (scroll < plz) {
-    	$(".fortheloveofgod").removeClass("navbar-fixed");
-    }
-});
+	     //>=, not <=
+	    if (scroll >= plz) {
+	        $(".fortheloveofgod").addClass("navbar-fixed");
+	    } else if (scroll < plz) {
+	    	$(".fortheloveofgod").removeClass("navbar-fixed");
+	    }
+	});
 });
