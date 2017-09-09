@@ -170,16 +170,8 @@ video.fillWidth {
 	animation-fill-mode: both;
 }
 
-.card {
-	z-index: 10;
-}
-
 .card-title {
 	font-size: 1.35rem !important;
-}
-
-.card-action {
-	z-index: 0;
 }
 
 .card-action > a {
@@ -208,10 +200,6 @@ video.fillWidth {
 	color: black;
 }
 
-.card-action {
-	position: fixed;
-	z-index: 10;
-}
 
 .navbar {
 	z-index: 20;

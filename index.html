@@ -133,7 +133,7 @@
 							</div>
 						</div>
 						<div class="card-action">
-							<a href="" class="btn red white-text">Event Details</a>
+							<a data-target="junior-quiz-modal" class="btn modal-trigger red" id="jquiz-button">Event Details</a>
 						</div>
 					</div>
 				</div>
@@ -152,7 +152,7 @@
 							</div>
 						</div>
 						<div class="card-action">
-							<a href="" class="btn red white-text">Event Details</a>
+							<a href="https://www.google.com" class="btn red white-text">Event Details</a>
 						</div>
 					</div>
 				</div>
@@ -333,6 +333,56 @@
 
 		<!--MODAL SECTION-->
 		<div>
+			<div id="junior-quiz-modal" class="modal">
+				<div class="modal-content">
+					<h3>Dates:</h3>
+					
+					<table class="striped">
+						<tbody>
+							<tr>
+								<td>Preliminary Round(s)</td>
+								<td>Friday, 6th October</td>
+							</tr>
+							<tr>
+								<td>Semi Finals &amp; Final Round</td>
+								<td>Tusday, 10th October</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<br>
+					<br>
+
+					<h3>Procedures:</h3>
+
+					<table class="striped">
+						<tr>
+							<td>
+								The teams will go through a preliminary round(s) on 6th October 2017. This year, there will be two rounds. The first round will start at 11:00 am sharp.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								The top-ten teams in the first preliminary round would directly qualify for the semifinals.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								A second round would be conducted with the schools who do not qualify. The top two teams from this round will join the other teams making it a twelve-team semifinal roster.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								The shortlisted teams will proceed to the semi-finals to be held on 10th October 2017.
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="modal-footer">
+					
+				</div>
+			</div>
+
 			<div id="prelim-modal" class="modal">
 				<div class="modal-content">
 					<h3>Prelims</h3>
@@ -531,10 +581,6 @@
 		<script src="js/jquery.fitvids.js"></script>
 		<script>
 			window.sr = ScrollReveal();
-			
-			window.setTimeout(function() {
-				sr.reveal('.card', {duration: 1500}, 50);
-			}, 2000);
 		</script>
 
 		

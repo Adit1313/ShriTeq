@@ -11,22 +11,5 @@ $(document).ready(function(){
 })
 
 $( window ).load(function() {
-    $('.fillWidth' ).get(0).play();
-    alert();
+    $('.fillWidth').get(0).play();
  });
-
-$(document).load(function() {
-
-	$(window).scroll(function() {    
-	    var scroll = $(window).scrollTop();
-
-	    var plz = $(window).height();
-
-	     //>=, not <=
-	    if (scroll >= plz) {
-	        $(".fortheloveofgod").addClass("navbar-fixed");
-	    } else if (scroll < plz) {
-	    	$(".fortheloveofgod").removeClass("navbar-fixed");
-	    }
-	});
-});

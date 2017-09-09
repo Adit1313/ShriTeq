@@ -31,6 +31,11 @@
 	        $('#register-modal').modal();
 	    });
 
+	    $('#jquiz-button').click(function() {
+	    	console.log("Hello");
+	    	$('#junior-quiz-modal').modal();
+	    });
+
 	    $("a").on('click', function(event) {
 
     		if (this.hash !== "") {
@@ -41,8 +46,6 @@
 		    	});
     		}
   		});
-
-  		console.log("HI");
 
 	});
 })(jQuery);
