@@ -190,10 +190,11 @@ video.fillWidth {
 	background-image: url(http://www.shriteq.org/2016/bg1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: left top;
+	background-position: center;
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+	margin-right: 50%;
 }
 
 .details {
