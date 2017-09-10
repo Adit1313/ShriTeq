@@ -206,16 +206,9 @@ video.fillWidth {
 	z-index: 20;
 }
 
-.arrow {
-	background-image: url('res/arrow.png');
-}
-
 .bounce {
 	position: relative;
-	top: 80%;
-	left: 50%;
-	margin-top: 480px;
-	margin-left: -52px;
+	
 	height: 50px;
 	width: 50px;
 	-webkit-animation: bounce 1s infinite;
@@ -229,7 +222,7 @@ video.fillWidth {
 }
 
 #school-link {
-	color: #B71C1C;
+	color: #F44336 !important;
 }
 
 #school-link:hover {
