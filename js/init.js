@@ -32,8 +32,31 @@
 	    });
 
 	    $('#jquiz-button').click(function() {
-	    	console.log("Hello");
 	    	$('#junior-quiz-modal').modal();
+	    });
+
+	    $('#lca-btn').click(function() {
+	    	$('#lca-modal').modal();
+	    });
+
+	    $('#scratch-btn').click(function() {
+	    	$('#scratch-modal').modal();
+	    });
+
+	    $('#msquiz-btn').click(function() {
+	    	$('#msquiz-modal').modal();
+	    });
+
+	    $('#squiz-btn').click(function() {
+	    	$('#squiz-modal').modal();
+	    });
+
+	    $('#hack-btn').click(function() {
+	    	$('#hack-modal').modal();
+	    });
+
+	    $('#crypt-btn').click(function() {
+	    	$('#crypt-modal').modal();
 	    });
 
 	    $("a").on('click', function(event) {
