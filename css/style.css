@@ -208,7 +208,6 @@ video.fillWidth {
 
 .bounce {
 	position: relative;
-	
 	height: 50px;
 	width: 50px;
 	-webkit-animation: bounce 1s infinite;
