@@ -59,6 +59,8 @@
 	    	$('#crypt-modal').modal();
 	    });
 
+	    $('.carousel.carousel-slider').carousel({fullWidth: true});
+
 	    $("a").on('click', function(event) {
 
     		if (this.hash !== "") {
