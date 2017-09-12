@@ -11,7 +11,7 @@
 	bottom: 0;
 }
 
-/* Video media queries */
+/* Video /*media*/ queries */
 
 @media (min-aspect-ratio: 16/9) {
 	.fillWidth {
@@ -31,15 +31,17 @@
 	.video-bg {
 		background: url('../res/sunrise.jpeg') center center / cover no-repeat;
 	}
+	.row .col {
+		float: none;
+		margin-bottom: 2rem;
+	}
+	.modal-content {
+		width: 90%;
+		margin: 1rem !important;
+	}
 }
 
 /* Navbar Logo media queries */
-
-.logo {
-	height: 2.4rem;
-	margin-top: 20%;
-	margin-left: 10%;
-}
 
 h1 {
 	text-align: center;
@@ -183,7 +185,7 @@ video.fillWidth {
 }
 
 .background {
-	background-image: url(http://www.shriteq.org/2016/bg1.jpg);
+	background-image: url(http://www.shriteq.org/2016/bg1.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -222,4 +224,9 @@ video.fillWidth {
 
 #school-link:hover {
 	border-bottom: 1px white solid;
+}
+
+.prev-btn {
+	position: relative;
+	margin-bottom: 200px;
 }

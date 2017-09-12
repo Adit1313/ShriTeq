@@ -7,7 +7,11 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 $(document).ready(function(){
-    $('#top').sticky({topSpacing: 0})
+    $('#top').sticky({topSpacing: 0});
+
+    $('.prev-btn').click(function() {
+    	$('.carousel').carousel('prev');
+    });
 })
 
 $( window ).load(function() {
