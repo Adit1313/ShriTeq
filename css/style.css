@@ -216,10 +216,6 @@ video.fillWidth {
   100%     {bottom:0;}
 }
 
-#school-link {
-	color: #F44336 !important;
-}
-
 #school-link:hover {
 	border-bottom: 1px white solid;
 }
