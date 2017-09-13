@@ -11,26 +11,7 @@
 	bottom: 0;
 }
 
-/* Video /*media*/ queries */
-
-@media (min-aspect-ratio: 16/9) {
-	.fillWidth {
-		height: 300%;
-		top: -100%;
-	}
-}
-
-@media (max-aspect-ratio: 16/9) {
-	.fillWidth {
-		width: 300%;
-		left: -100%;
-	}
-}
-
 @media (max-width: 767px) {
-	.video-bg {
-		background: url('../res/sunrise.jpeg') center center / cover no-repeat;
-	}
 	.row .col {
 		float: none;
 		margin-bottom: 2rem;
@@ -87,34 +68,6 @@ p {
 
 #contact-card {
 	padding-bottom: 2%;
-}
-
-.video-bg {
-	height: 90vh;
-	position: relative;
-	padding: 20px;
-}
-
-.video-holder {
-	position: absolute;
-}
-
-.video-holder {
-	top: 0%;
-	left: 0%;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-	z-index: -1;
-}
-
-video {
-	position: absolute;
-	z-index: 0;
-}
-
-video.fillWidth {
-	width: 100%;
 }
 
 .intro-button {
@@ -218,10 +171,6 @@ video.fillWidth {
   100%     {bottom:0;}
 }
 
-#school-link {
-	
-}
-
 #school-link:hover {
 	border-bottom: 1px white solid;
 }
@@ -229,4 +178,30 @@ video.fillWidth {
 .prev-btn {
 	position: relative;
 	margin-bottom: 200px;
+}
+
+.header-unit {
+    height: 90vh;
+    border: 2px solid #000;
+    border-right:none;
+    border-left: none;
+    position: relative;
+    padding: 20px;
+}
+#video-container {
+    position: absolute;
+}
+#video-container {
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+video {
+    position:absolute;
+    z-index:0;
+}
+video.fillWidth {
+    width: 100%;
 }

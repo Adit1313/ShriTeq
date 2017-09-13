@@ -28,6 +28,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="fortheloveofgod">
 			<nav class="white nb" role="navigation" id="top">
 				<div class="nav-wrapper">
@@ -50,39 +51,24 @@
 			<li><a href="#schedule" class=".navbar-links">Schedule</a></li>
 			<li><a href="#join" class=".navbar-links">Find Us Here</a></li>
 		</ul>
-		
-		<div class="video-bg">
-			<div class="video-holder">
-				<video class="fillWidth" autoplay src="res/video2.mp4">
-				</video>
-			</div>
-			<div class="overlay">
-				<div>
-					<h1 style="font-size: 3rem; margin-top: 0.5rem; font-weight: bold;" class="white-text">ShriTeq 2017</h1>
-					<h3 style="font-size: 1.5rem; text-align: center; font-weight: bold;"><a target = "_blank" href="http://www.tsrs.org/" id="school-link" class="red-text text-darken-4">THE SHRI RAM SCHOOL</a></h3>
-					<h3 style="font-size: 1.4rem; text-align: center; font-weight: bold;" class="white-text">9<sup>th</sup> - 11<sup>th</sup> October</h3>
-					<div style="text-align: center; margin-top: 29%;">
-						<a href="#about" class="bounce" style="color: white;"><i class="small material-icons" style="display: block; margin: auto;">arrow_downward</i></a>
-					</div>
+
+		<div class="header-unit">
+		    <div id="video-container">
+		        <video autoplay class="fillWidth" style="z-index: -1;">
+		            <source src="res/video2.mp4" type="video/mp4"/>
+		        </video>
+		    </div>
+		    <div style="position: relative;">
+				<h1 style="font-size: 3rem; font-weight: 600;" class="white-text">ShriTeq 2017</h1>
+				<h3 style="font-size: 1.5rem; text-align: center; font-weight: 600;"><a href="#about" id="school-link" class="red-text text-darken-4">THE SHRI RAM SCHOOL</a></h3>
+				<h3 style="font-size: 1.4rem; text-align: center; font-weight: 600;" class="white-text">9<sup>th</sup> - 11<sup>th</sup> October</h3>
+				<div style="text-align: center; margin-top: 7%;">
+					<a href="#about" class="bounce" style="color: white;"><i class="small material-icons" style="display: block; margin: auto; margin-top: 2%;">arrow_downward</i></a>
 				</div>
-			</div>
+		    </div>
 		</div>
 
-		<div class="background hide-on-med-and-up" style="width: 100vw;">
-			<div class="overlay">
-				<div>
-					<a href="#about"><img src="res/shri-circle.png" class="responsive-img" style="height: 15rem; display: block; margin: auto; padding-left: 2.4%; padding-top: 3rem;"></a>
-					<h1 style="font-size: 3rem; font-weight: 600;" class="white-text">ShriTeq 2017</h1>
-					<h3 style="font-size: 1.5rem; text-align: center; font-weight: 600;"><a href="#about" id="school-link" class="red-text text-darken-4">THE SHRI RAM SCHOOL</a></h3>
-					<h3 style="font-size: 1.4rem; text-align: center; font-weight: 600;" class="white-text">9<sup>th</sup> - 11<sup>th</sup> October</h3>
-					<div style="text-align: center; margin-top: 13%;">
-						<a href="#about" class="bounce" style="color: white;"><i class="small material-icons" style="display: block; margin: auto; margin-top: 2%;">arrow_downward</i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div style = "padding-top: 3rem;">
+		<div>
 			<h1 id="about" class="red-text text-darken-4 text-cen">ShriTeq 2017</h1>
 
 			<div class="container">
@@ -330,15 +316,19 @@
 				</div>
 			</div>
 		</div>
-		
+		<!--
 		<div id="gallery">
-			<div class="carousel carousel-slider" data-indicators="true">
-				<a class="carousel-item"><img src="res/pic1.jpg"></a>
-				<a class="carousel-item"><img src="res/pic2.jpg"></a>
-				<a class="carousel-item"><img src="res/pic3.jpg"></a>
-				<a class="carousel-item"><img src="res/pic4.jpg"></a>
+			<div class="carousel carousel-slider">
+				<div class="carousel-fixed-item">
+					<button class="btn-flat white left prev-btn"><i class="material-icons">arrow_left</i></button>
+					<button class="btn-flat white right next-btn"><i class="material-icons">arrow_right</i></button>
+				</div>
+				<a class="carousel-item"><img src="https://lorempixel.com/800/400/food/1"></a>
+				<a class="carousel-item"><img src="https://lorempixel.com/800/400/food/2"></a>
+				<a class="carousel-item"><img src="https://lorempixel.com/800/400/food/3"></a>
+				<a class="carousel-item"><img src="https://lorempixel.com/800/400/food/4"></a>
 			</div>
-		</div>
+		</div>-->
 
 		<!--MODAL SECTION-->
 		<div>
@@ -1097,9 +1087,9 @@
 			menu_id.css('left', '');
 
 			window.addEventListener("hashchange", function() { scrollBy(0, -20) });
-			var shiftWindow = function() { scrollBy(0, -45) }; 
-			if (location.hash) shiftWindow(); 
-			window.addEventListener("hashchange", shiftWindow);
+   			var shiftWindow = function() { scrollBy(0, -45) }; 
+   			if (location.hash) shiftWindow(); 
+   			window.addEventListener("hashchange", shiftWindow);
 		</script>
 	</body>
 </html>
